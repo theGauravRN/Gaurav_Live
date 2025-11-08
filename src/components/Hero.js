@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
+  const [imageError, setImageError] = useState(false);
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -84,7 +85,16 @@ const Hero = () => {
           transition={{ type: 'spring', stiffness: 300 }}
         >
           <div className="avatar-circle">
-            <span>GK</span>
+            {!imageError ? (
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/profile.jpg`} 
+                alt="Gaurav Kumar" 
+                className="avatar-image"
+                onError={() => setImageError(true)}
+              />
+            ) : (
+              <span>GK</span>
+            )}
           </div>
         </motion.div>
 
