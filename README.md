@@ -1,3 +1,41 @@
+# Gaurav Kumar - Portfolio Website
+
+A modern, responsive portfolio website built with React, showcasing my skills, experience, and projects.
+
+## 🚀 Deployment
+
+This project is configured for GitHub Pages deployment. The site will be automatically deployed when you push to the `main` branch.
+
+### Live Site
+Your site is live at: [https://thegauravrn.github.io/Gaurav_Live/](https://thegauravrn.github.io/Gaurav_Live/)
+
+### Setup Instructions
+
+1. **Homepage URL is configured:**
+   - Already set to: `"homepage": "https://thegauravrn.github.io/Gaurav_Live"`
+
+2. **Enable GitHub Pages:**
+   - Go to your repository on GitHub
+   - Navigate to **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
+   - Save the settings
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Deploy manually (optional):**
+   ```bash
+   npm run deploy
+   ```
+
+5. **Automatic Deployment:**
+   - The GitHub Actions workflow will automatically deploy your site when you push to the `main` branch
+   - Check the **Actions** tab in your GitHub repository to see deployment status
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

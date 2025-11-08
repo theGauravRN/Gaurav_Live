@@ -1,7 +1,14 @@
 # Dependencies
 node_modules/
+**/node_modules/
+node_modules/**/*
 /.pnp
 .pnp.js
+
+# Cache directories
+node_modules/.cache/
+**/.cache/
+.cache/
 
 # Testing
 /coverage
